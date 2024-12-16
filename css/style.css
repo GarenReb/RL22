@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body {
+    height: 100vh;
+}
 img {
     width: 100%;
 }
@@ -37,7 +40,7 @@ nav {
 /*Untappd og maps sekstion*/
 .untappd_maps
 {
-    height: 380px;
+    height: 480px;
     background-color: #122226;
     color: white;
     text-align: center;
@@ -45,7 +48,7 @@ nav {
 }
 /*Untappd på forside*/
 .untappd {
-    height: 350px;
+    height: 450px;
     background-color: #1D383F;
     border-radius: 0 0 15px 0;
     width: 50%;
@@ -54,7 +57,7 @@ nav {
     flex-direction: column;
 }
 .untappd img {
-    width: 70px;
+    width: 90px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -65,17 +68,66 @@ nav {
     font-size: 30px;
     margin-top: 10px;
 }
+.untappd_qr {
+    height: 100px;
+    width: 325px;
+}
 /*Maps på forside*/
 .maps{
-    height: 350px;
+    height: 450px;
     background-color: #1D383F;
     border-radius: 0 0 0 15px;
     width: 50%;
     margin-left: 15px;
 }
+.maps h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.maps p {
+    margin-bottom: 20px;
+}
+.maps iframe{
+    border-radius: 10px;
+}
 
 /*Footer*/
 footer {
-    height: 100px;
+    height: 300px;
     background-color: #ED9F2D;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact_footer {
+    display: flex;
+}
+.contact_footer img{
+    width: 150px;
+    height: 150px;
+    align-items: center;
+}
+.colorbar {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.colorbar div{
+    flex: 1;
+    height: 100%;
+}
+.dark_green{
+    background-color: #1D383F;
+}
+.yellow{
+    background-color: #FCAA32;
+}
+.orange {
+    background-color: #E6792B;
+}
+.brown{
+    background-color: #71221C;
+}
+.red {
+    background-color: #DF5429;
 }
