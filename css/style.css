@@ -90,7 +90,6 @@ nav {
 .maps iframe{
     border-radius: 10px;
 }
-
 /*Footer*/
 footer {
     height: 300px;
@@ -98,14 +97,55 @@ footer {
     display: flex;
     justify-content: space-evenly;
 }
+footer h4{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
 .contact_footer {
     display: flex;
+    gap: 10px;
+    align-items:  center;
+}
+.contact_footer a {
+    color: black;
 }
 .contact_footer img{
     width: 150px;
     height: 150px;
     align-items: center;
 }
+.tekst_contact {
+   align-items: center;
+}
+.some_footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    
+}
+.contact_footer a {
+    text-decoration: none;
+
+}
+/*SoMe-ikoner*/
+.fa-square-instagram, .fa-square-facebook{
+    font-size: 60px;
+    margin-top: 20px;
+}
+/*Åbningstider*/
+.opening{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.opening h4{
+    te
+
+}
+/*Farvet bar i bunden */
 .colorbar {
     height: 70px;
     display: flex;
