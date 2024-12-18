@@ -23,7 +23,6 @@ nav {
 }
 .main_frontpage {
     height: 90vh;
-    
     color: white;
     text-align: center;
     width: 100%;
@@ -51,7 +50,6 @@ video {
     background-color: #9F581F;
     margin-bottom: 50px;
 }
-
 /*Eventsektion*/
 .events {
     color: black;
@@ -207,7 +205,6 @@ footer h4{
     flex-direction: column;
     justify-content: center;
 }
-
 /*Farvet bar i bunden */
 .colorbar {
     height: 70px;
