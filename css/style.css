@@ -275,11 +275,9 @@ footer h4{
     flex-direction: column;
     justify-content: center;
     font-weight: bold;
-    
 }
 .contact_footer a {
     text-decoration: none;
-
 }
 /*SoMe-ikoner*/
 .fa-square-instagram, .fa-square-facebook{
@@ -293,7 +291,7 @@ footer h4{
     flex-direction: column;
     justify-content: center;
 }
-/*Farvet bar i bunden */
+/*Farvet bar i bunden af footer */
 .colorbar {
     height: 70px;
     display: flex;
@@ -319,8 +317,23 @@ footer h4{
 .red {
     background-color: #DF5429;
 }
-/*Desktop version*/
-@media screen and (min-width:768) {
-    
-    
-}
+/*Tablet version*/
+@media screen and (min-width: 768px) {
+    .circle-wrapper{
+        display: none;
+    }
+    .nav-links-container{
+        max-height: none;
+    }
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        margin: 18px 0px 20px;
+    }
+    .nav-links li {
+        border: none;
+        padding: 0;
+    }
+    .nav-logo-container {
+        
+    }
