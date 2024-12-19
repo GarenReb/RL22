@@ -352,10 +352,13 @@ footer h4{
     }
     /*Desktop-version*/
     @media screen and (min-width:1025px) {
+        /*Navigation*/
         #navbar {
             display: flex;
             justify-content: space-between;
             padding: 20px 40px;
+            max-width: 1800px;
+            margin: auto;
         }
         .nav-logo-container {
             padding: 0px;
@@ -368,5 +371,47 @@ footer h4{
             border: solid;
             flex: 1;
             align-items: center;
+        }
+        /*Effekter på links og SoMe-ikoner*/
+        .nav-links-container {
+            position: relative;
+        }
+        .nav-links-container .nav-some a {
+            position: relative; 
+        }
+        .nav-links-container .nav-some a::before {
+            content: '';
+            height: 15px;
+            width: 100%;
+            background-color: white;
+            position: absolute;
+            bottom: -13px;
+            left: 0;
+            filter: blur(10px);
+            transform: rotateX(90deg);
+            transition: transform 0.3s ease;
+        }
+        .nav-links-container .nav-some a:hover::before {
+            transform: rotateX(85deg);
+        }
+        .nav-links-container .nav-some a:hover i {
+            transform: scale(1.2);
+            transition: transform 0.3s ease;
+        }
+        .nav-links li a {
+            position: relative;
+        }
+        .nav-links li a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0px;
+            height: 2px;
+            width: 0px;
+            background: white;
+            transition: width 0.5s ease;
+        }
+        .nav-links li a:hover::before {
+            width: 40px;
         }
     }
