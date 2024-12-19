@@ -319,3 +319,8 @@ footer h4{
 .red {
     background-color: #DF5429;
 }
+/*Desktop version*/
+@media screen and (min-width:768) {
+    
+    
+}
