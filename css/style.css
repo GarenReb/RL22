@@ -7,32 +7,92 @@
 }
 body {
     height: 100vh;
+    overflow-x: hidden;
 }
 img {
     width: 100%;
 }
 /*Header*/
-nav {
-    height: 70px;
-    background-color: black;
+header a{
+    text-decoration: none;
     color: white;
 }
-.logo {
-    height: 70px;
-    width: 70px;
+header ul{
+    list-style: none;
 }
+#navbar{
+    box-shadow: 2px 2px 8px -6px #101a67;
+}
+#mobileMenuTrigger{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#mobileMenuTrigger div{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 5px;
+}
+.nav-logo-container{
+    border: solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+.nav-links{
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0px 40px;
+}
+.nav-links li{
+    border-bottom: 1px solid rgba(73, 80, 160, 0.123);
+    padding: 10px 0px 40px;
+}
+.nav-links-container{
+    border: solid;
+    max-height: 0px;
+    overflow-y: hidden
+}
+
+/*Main sektion med video*/
 .main_frontpage {
     height: 90vh;
     color: white;
     text-align: center;
-    width: 100%;
 }
-/*Main sektion med video*/
 .video-container {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.video-container h1{
+    opacity: 0;
+    transform: translateY(20px);
+    font-size: 4em;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+.video-container h2{
+    font-size: 3em;
+    animation: fadeIn 2s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+        transform: translateY(0);
+    }
 }
 video {
     position: absolute;
@@ -41,7 +101,7 @@ video {
     transform: translate(-50%, -50%);
     min-width: 100%;
     min-height: 100%;
-    object-fit: cover; /* Tilpas videoen, så den fylder hele området */
+    object-fit: cover;
     z-index: -1;
 }
 /*Brun linje*/
