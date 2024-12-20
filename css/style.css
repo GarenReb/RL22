@@ -8,6 +8,7 @@
 body {
     height: 100vh;
     overflow-x: hidden;
+    width: 100%;
 }
 img {
     width: 100%;
@@ -115,7 +116,7 @@ header ul{
 .video-container h1{
     opacity: 0;
     transform: translateY(20px);
-    font-size: 4em;
+    font-size: 1.8rem;
     animation: fadeIn 1.5s ease-out forwards;
 }
 .video-container h2{
@@ -144,15 +145,15 @@ video {
 .brown_line {
     height: 50px;
     background-color: #9F581F;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 /*Eventsektion*/
 .events {
     color: black;
     display: flex;
-    gap: 20px;
-    margin-top: 15px;
-    margin-bottom: 35px;
+    gap: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
     overflow-x: auto;
@@ -168,8 +169,8 @@ video {
 .box{
     display: grid;
     grid-template-rows: 80% 20%;
-    margin-left: 50px;
-    width: 25vw;
+    width: 75vw;
+    margin-left: 15px;
 }
 .pic_event img{
     border-radius: 10px 10px 0 0;
@@ -196,6 +197,7 @@ video {
     align-items: center;
     font-size: 1.1rem;
     border-radius: 0 0 10px 0;
+    margin-bottom: 10px;
 }
 /*Untappd og maps sekstion*/
 .untappd_maps{
