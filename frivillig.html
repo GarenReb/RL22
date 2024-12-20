@@ -3,9 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bliv Frivillig</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #002a2e;
+            color: #ffffff;
+        }
+
+        .container1 {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #1D383F;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container1 img {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 45%;
+            border-radius: 10px;
+        }
+
+        .container2 {
+            background-color: #ffffff;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container2 h5 {
+            font-size: 14px;
+            color: #000000;
+            margin-top: 20px;
+        }
+        .container2 p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header img {
+            max-width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #ffda8e;
+            margin-top: 20px;
+        }
+        .container1 h5 {
+            font-size: 14px;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #ffda8e;
+        }
+        .brown_line {
+            height: 50px;
+            background-color: #9F581F;
+            margin-bottom: 50px;
+            width: 100%;
+        }
+
+        form {
+            margin-top: 20px;
+            background-color: #1D383F;
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #ED9F2D;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form button:hover {
+            background-color: #B8CDE0;
+        }
+
+        @media (min-width: 768px) {
+            .container1, .container2 {
+                max-width: 100%;
+                padding: 40px;
+            }
+
+            .container1 img {
+                width: 25%;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container1">
+        <h1>BLIV FRIVILLIG</h1>
+        <img src="img/frivillig.jpg" alt="Frivillig hos Brewpub"> 
+        <h5>Bliv en del af fællesskabet på Fredericia Brewpub!</h5>
+        <p>Fredericia Brewpub bygger på engagement og fællesskab – både blandt gæster og vores fantastiske frivillige. Det er takket være vores dedikerede frivillige, at vi kan skabe en hyggelig atmosfære og unikke arrangementer, der gør hvert besøg til noget særligt.</p>
+        <p>Har du lyst til at være med til at styrke Fredericias lokale fællesskab, få erfaring til dit CV, udvide dit netværk eller blive en del af en varm og social gruppe, så bliv frivillig hos Fredericia Brewpub. Vi har altid plads til passionerede mennesker med forskellige kompetencer, interesser og baggrunde – uanset om du er erfaren frivillig eller prøver det for første gang.</p>
+        <p>Hos os får du mulighed for at bidrage på mange måder, hvad enten det er ved at hjælpe til ved arrangementer, brygge øl eller byde vores gæster velkommen. Har du særlige evner eller idéer, som kan gøre pubben endnu bedre? Så hører vi meget gerne fra dig – vi elsker nye input og spændende idéer!</p>
+        <p class="highlight">Kom og vær med til at skabe noget helt særligt!</p>
+        
+    </div>
+    <div class="brown_line"></div>
+    <div class="container2">
+        <h5>Ønsker du at blive frivillig hos os og har spørgsmål, er du velkommen til at kontakte os via kontaktformularen</h5>
+        <form action="#" method="POST">
+            <label for="name">Navn</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Besked</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">SEND</button>
+        </form>
+    </div>
 </body>
 </html>
