@@ -3,9 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fredericia Brewpub Blog</title>
+    <script src="https://kit.fontawesome.com/9e8d24e930.js" crossorigin="anonymous"></script>
+    <style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.intro p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.timeline {
+    margin: 20px 0;
+    max-height: 400px; 
+    overflow-y: auto; 
+    padding-right: 10px;
+    scrollbar-width: thin; 
+}
+
+.timeline::-webkit-scrollbar {
+    width: 8px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+    background-color: #1D383F; 
+    border-radius: 10px;
+}
+
+.year {
+    background-color: #1D383F;
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 10px;
+    max-width: 400px;
+    color: #ffffff;
+}
+
+.year h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.year img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.socials {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+}
+
+/*SoMe-ikoner*/
+.fa-square-instagram, .fa-square-facebook{
+    font-size: 60px;
+    margin-top: 20px;
+    color: black;
+}
+@media (max-width: 768px) {
+    .intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .timeline {
+        max-height: 300px;
+    }
+
+    .year {
+        max-width: 300px;
+    }
+
+    .fa-square-instagram, .fa-square-facebook {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .intro h2 {
+        font-size: 1.2rem;
+    }
+
+    .intro p {
+        font-size: 12px;
+    }
+
+    .timeline {
+        max-height: 200px;
+    }
+
+    .year {
+        max-width: 250px;
+    }
+
+    .fa-square-instagram, .fa-square-facebook {
+        font-size: 40px;
+    }
+}
+    </style>
 </head>
 <body>
+    <section class="intro">
+        <h1>TIDENS GANG PÅ</h1>
+        <h2>FREDERICIA BREWPUB</h2>
+        <p>Velkommen til Fredericia Brewpubs Blog</p>
+        <p>
+            Her kan du følge med i, hvad der sker på Fredericia Brewpub! Vi deler glimt fra vores arrangementer, spændende historier fra vores rejse siden 2019 og indsigt i brygprocessen bag vores unikke øl. Klik dig ind på hvert år for at se billeder, læse om tidligere events og genopleve højdepunkter fra pubbens historie.
+        </p>
+    </section>
+
+    <section class="timeline">
+        <div class="year">
+            <h3>2024</h3>
+            <img src="img/fbp2024.PNG" alt="Event fra 2024">
+        </div>
+        <div class="year">
+            <h3>2023</h3>
+            <img src="img/fbp2023.PNG" alt="Event fra 2023">
+        </div>
+        <div class="year">
+            <h3>2022</h3>
+            <img src="img/fbp2022.PNG" alt="Event fra 2022">
+        </div>
+        <div class="year">
+            <h3>2021</h3>
+            <img src="img/fbp20211.PNG" alt="Event fra 2021">
+        </div>
+        <div class="year">
+            <h3>2020</h3>
+            <img src="img/fbp2020.PNG" alt="Event fra 2020">
+        </div>
+        <div class="year">
+            <h3>2019</h3>
+            <img src="img/fbp2019.PNG" alt="Event fra 2019">
+        </div>
+    </section>
     
+
+    <footer>
+        <p>Vil du se mere fra Fredericia Brewpub?</p>
+        <p>Følg os på Facebook og Instagram for flere billeder, videoer og opdateringer.</p>
+        <div class="socials">
+            <a href="https://www.instagram.com/fredericiabrewpub.dk"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.facebook.com/fredericiabrewpub.dk" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
